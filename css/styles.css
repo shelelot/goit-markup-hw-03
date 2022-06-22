@@ -18,8 +18,6 @@ img {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-
-    outline: 1px solid red;
 }
 .list {
     list-style: none;
@@ -32,6 +30,7 @@ img {
     flex-direction: row;
     align-items: center;
     height: 80px;
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 .logo {
     font-family: 'Raleway';
@@ -98,8 +97,15 @@ img {
 
 /* HERO */
 .section-hero {
-    height: 600px;
     background-color: rgba(47, 48, 58, 1);
+}
+.hero {
+    padding-top: 170px;
+    padding-bottom: 230px;
+    margin-top: 30px;
+}
+.hero-item:not(:last-child) {
+    margin-bottom: 30px;
 }
 .text-hero {
     width: 696px;
@@ -114,7 +120,10 @@ img {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 1);
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .button-one {
     font-family: inherit;
     font-style: normal;
@@ -122,18 +131,23 @@ img {
     font-size: 16px;
     line-height: 1.88;
     border: transparent;
-    display: flex;
+    display: block;
     text-align: center;
     letter-spacing: 0.06em;
-    width: 200px;
-    height: 50px;
     color: #ffffff;
     background-color: #2196F3;
     cursor: pointer;
     border-radius: 4px;
     padding: 10px 32px;
-}
+    margin-left: auto;
+    margin-right: auto;
+ }
+
 /* Features */
+.features {
+    padding-top: 64px;
+    padding-bottom: 94px;
+}
 .features-list {
     width: 1170px;
     height: 101px;
@@ -141,7 +155,9 @@ img {
     top: 774px;
     display: flex;
     justify-content: space-between;
-
+}
+.features-list:not(:last-child) {
+    margin-right: 30px;
 }
 .features-box {
     width: 270px;
@@ -161,6 +177,7 @@ img {
     left: 215px;
     top: 774px;
     color: #212121;
+    margin-bottom: 10px;
 }
 .features-text {
     font-size: 14px;
@@ -171,6 +188,8 @@ img {
     left: 215px;
     top: 800px;
 }
+/* EXAMPLES WORK */
+
 .section-title {
     font-style: normal;
     font-weight: 700;
@@ -179,18 +198,35 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    padding-bottom: 50px;
 }
-.team {
-    width: 1600px;
-    height: 648px;
-    left: 0px;
-    top: 1449px;
-    background-color: #F5F4FA;
+.work {
+    padding-bottom: 94px;
 }
-.team-list {
-    width: 1170px;
+.photo-work {
     display: flex;
     justify-content: space-between;
+}
+.photo-work:not(:last-child) {
+    margin-right: 30px;
+}
+/* TEAM */
+.section-team {
+    background-color: #F5F4FA;
+}
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.team-list {
+    display: flex;
+    justify-content: space-between;
+}
+.team-list:not(:last-child) {
+    margin-right: 30px;
+}
+.team-box {
+    background-color: #FFFFFF;
 }
 .team-title {
     font-style: normal;
@@ -200,6 +236,8 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 .team-text {
     font-size: 16px;
@@ -207,14 +245,15 @@ img {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+    padding-bottom: 30px;
 }
 /* Підвал */
 .container-footer {
-    width: 1600px;
-    height: 252px;
-    left: 0px;
-    top: 2097px;
     background-color: #2F303A;
+}
+.foot-er {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .map {
     font-style: normal;
@@ -223,6 +262,12 @@ img {
     letter-spacing: 0.03em;
     text-decoration: none;
     color: #FFFFFF;
+}
+.address {
+    margin-top: 20px;
+}
+.adress-item:not(:last-child) {
+    margin-bottom: 9px;
 }
 .address .auth-nav {
     font-style: normal;
@@ -268,6 +313,32 @@ img {
     border: transparent;
 }
 /* Main */
+
+.portfolio-box {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.filters {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 34px;
+}
+.filter-item {
+    margin-right: 8px;
+}
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.portfolio-list {
+    flex-basis: cals((100%-60px)/3);
+    border: 1px solid rgba(238, 238, 238, 1);
+}
+.port-text-box {
+    padding: 20px 24px;
+}
 .portfolio-title {
     font-style: normal;
     font-weight: 700;
@@ -275,6 +346,7 @@ img {
     line-height: 2;
     letter-spacing: 0.06em;
     color: #212121;
+    margin-bottom: 4px;
 }
 .portfolio-text {
     font-size: 16px;
